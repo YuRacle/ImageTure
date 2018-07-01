@@ -1,6 +1,5 @@
 import javax.imageio.ImageIO;
 import java.awt.image.BufferedImage;
-import java.io.BufferedInputStream;
 import java.io.File;
 import java.io.IOException;
 
@@ -13,9 +12,9 @@ import java.io.IOException;
 public class ImageTure {
 
     public static void main(String[] args) {
-        new ImageTure().turnToHui("753588.jpg","hui.jpg");
+        new ImageTure().turnToHui("1.jpg","out.jpg");
     }
-//  实现方法
+
     public void turnToHui(String path, String outPath) {
         File file = new File(path);
         BufferedImage image = null;
